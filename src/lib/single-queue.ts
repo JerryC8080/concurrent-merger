@@ -1,8 +1,6 @@
-import { Logger } from '@jerryc/mini-logger';
-
 import uuid from '../utils/uuid';
 
-const logger = new Logger({ prefix: 'single-queue' });
+import { logger } from './logger';
 
 /**
  * 单任务队列
@@ -33,7 +31,7 @@ export class SingleQueue {
     if (name) this.name = name;
   }
 
-  addJob(job: Array<any>) {
+  private addJob(job: Array<any>) {
     const id = uuid();
     if (this.queue.length >= this.queueMaxLength) {
       throw new Error(`${this.name}-任务队列-超出容量：${this.queueMaxLength}`);
@@ -48,7 +46,7 @@ export class SingleQueue {
     this.queue.push([...job, id]);
   }
 
-  consumeAllAsSuccess(result) {
+  private consumeAllAsSuccess(result) {
     // eslint-disable-next-line functional/no-loop-statement
     while (this.queue.length > 0) {
       const [resolve, , id] = this.queue.shift();
@@ -57,7 +55,7 @@ export class SingleQueue {
     }
   }
 
-  consumeAllAsFail(error) {
+  private consumeAllAsFail(error) {
     // eslint-disable-next-line functional/no-loop-statement
     while (this.queue.length > 0) {
       const [, reject, id] = this.queue.shift();
@@ -66,7 +64,7 @@ export class SingleQueue {
     }
   }
 
-  proxy(originMethods: (...any) => Promise<any>) {
+  public proxy(originMethods: (...any) => Promise<any>) {
     // eslint-disable-next-line @typescript-eslint/no-this-alias
     const that = this;
 
