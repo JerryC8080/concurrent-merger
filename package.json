@@ -1,13 +1,13 @@
 {
-  "name": "@jerryc/single-queue",
+  "name": "@jerryc/concurrent-merger",
   "version": "0.0.1",
-  "description": "Single queue",
+  "description": "Merger concurrent called of a function",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/JerryC8080/single-queue.git"
+    "url": "git+ssh://git@github.com/JerryC8080/concurrent-merger.git"
   },
   "author": "JerryC (huangjerryc@gmail.com)",
   "license": "MIT",
@@ -15,9 +15,9 @@
     "cache"
   ],
   "bugs": {
-    "url": "https://github.com/JerryC8080/single-queue/issues"
+    "url": "https://github.com/JerryC8080/concurrent-merger/issues"
   },
-  "homepage": "https://github.com/JerryC8080/single-queue#readme",
+  "homepage": "https://github.com/JerryC8080/concurrent-merger#readme",
   "publishConfig": {
     "access": "public"
   },

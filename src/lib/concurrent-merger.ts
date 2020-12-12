@@ -10,7 +10,7 @@ import { logger } from './logger';
  *
  * 使用场景：高并发秒杀场景、刷新登录态场景等
  */
-export class SingleQueue {
+export class ConcurrentMerger {
   // 最大队列负载
   public queueMaxLength = 100;
   // 单队列名称
@@ -24,8 +24,8 @@ export class SingleQueue {
     queueMaxLength,
     name,
   }: {
-    queueMaxLength?: typeof SingleQueue.prototype.queueMaxLength;
-    name?: typeof SingleQueue.prototype.name;
+    queueMaxLength?: typeof ConcurrentMerger.prototype.queueMaxLength;
+    name?: typeof ConcurrentMerger.prototype.name;
   }) {
     if (queueMaxLength) this.queueMaxLength = queueMaxLength;
     if (name) this.name = name;
