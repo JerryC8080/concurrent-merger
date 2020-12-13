@@ -1,8 +1,10 @@
 # Concurrent Merger - 并发调用合并器
 
-[![CircleCI](https://circleci.com/gh/JerryC8080/concurrent-merger/tree/master.svg?style=svg)](https://circleci.com/gh/JerryC8080/concurrent-merger/tree/master)
-
-[![NPM Version](https://img.shields.io/npm/v/@jerryc/concurrent-merger.svg)](https://www.npmjs.com/package/@jerryc/concurrent-merger) [![NPM Downloads](https://img.shields.io/npm/dm/@jerryc/concurrent-merger.svg)](https://www.npmjs.com/package/@jerryc/concurrent-merger) [![Coverage Status](https://coveralls.io/repos/github/JerryC8080/concurrent-merger/badge.svg?branch=master)](https://coveralls.io/github/JerryC8080/concurrent-merger?branch=master) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/@jerryc/mini-logger.svg)
+[![CircleCI](https://img.shields.io/circleci/build/github/JerryC8080/concurrent-merger/master?style=for-the-badge)](https://circleci.com/gh/JerryC8080/concurrent-merger/tree/master)
+[![Coveralls github branch](https://img.shields.io/coveralls/github/JerryC8080/concurrent-merger/master?style=for-the-badge)](https://coveralls.io/github/JerryC8080/concurrent-merger?branch=master)
+[![NPM Version](https://img.shields.io/npm/v/@jerryc/concurrent-merger.svg?style=for-the-badge)](https://www.npmjs.com/package/@jerryc/concurrent-merger)
+[![NPM Downloads](https://img.shields.io/npm/dm/@jerryc/concurrent-merger.svg?style=for-the-badge)](https://www.npmjs.com/package/@jerryc/module-seed)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/@jerryc/mini-logger.svg?style=for-the-badge)
 
 ## 说明
 
